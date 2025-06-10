@@ -1,0 +1,721 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>F5B_20_Cici_20250610</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>廖彥禧的個人介紹</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css" rel="stylesheet">
+</head>
+<body class="font-sans bg-white text-gray-800">
+    <!-- 導航欄 -->
+    <nav id="navbar" class="fixed w-full z-50 transition-all duration-300 bg-white/90 backdrop-blur-md shadow-sm">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <div class="text-xl font-bold text-blue-600">廖彥禧<br>Cici Liao</div>
+            <div class="hidden md:flex space-x-8">
+                <a href="#about" class="hover:text-blue-600 transition-colors">關於我</a>
+                <a href="#skills" class="hover:text-blue-600 transition-colors">技能特長</a>
+                <a href="#experience" class="hover:text-blue-600 transition-colors">經歷成就</a>
+                <a href="#certificates" class="hover:text-blue-600 transition-colors">證書作品</a>
+                <a href="#contact" class="hover:text-blue-600 transition-colors">聯繫方式</a>
+            </div>
+            <button id="menu-toggle" class="md:hidden text-gray-800 focus:outline-none">
+                <i class="fa fa-bars text-xl"></i>
+            </button>
+        </div>
+        <!-- 移动端菜单 -->
+        <div id="mobile-menu" class="md:hidden hidden bg-white shadow-lg absolute w-full">
+            <div class="container mx-auto px-4 py-2 flex flex-col space-y-3">
+                <a href="#about" class="py-2 hover:text-blue-600 transition-colors">關於我</a>
+                <a href="#skills" class="py-2 hover:text-blue-600 transition-colors">技能特長</a>
+                <a href="#experience" class="py-2 hover:text-blue-600 transition-colors">經歷成就</a>
+                <a href="#certificates" class="py-2 hover:text-blue-600 transition-colors">證書作品</a>
+                <a href="#contact" class="py-2 hover:text-blue-600 transition-colors">聯繫方式</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 区域 -->
+    <header class="pt-24 pb-16 md:pt-32 md:pb-24 bg-gradient-to-br from-blue-50 to-blue-100">
+        <div class="container mx-auto px-4 flex flex-col md:flex-row items-center">
+            <div class="md:w-1/2 mb-8 md:mb-0">
+                <h1 class="text-[clamp(2rem,5vw,3.5rem)] font-bold text-gray-800 leading-tight">
+                    你好，我是<span class="text-blue-600">廖彥禧</span>
+                </h1>
+                <p class="text-[clamp(1rem,2vw,1.25rem)] text-gray-600 mt-4 mb-8">
+                    一名來自聖若瑟教區中學第五校的高中生
+                </p>
+                <div class="flex space-x-4">
+                    <a href="#contact" class="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-lg transition-colors shadow-lg hover:shadow-xl transform hover:-translate-y-1 duration-300">
+                        聯繫我
+                    </a>
+                    <a href="#certificates" class="bg-white hover:bg-gray-50 text-blue-600 border border-blue-600 px-6 py-3 rounded-lg transition-colors shadow-md hover:shadow-lg transform hover:-translate-y-1 duration-300">
+                        查看證書
+                    </a>
+                </div>
+            </div>
+            <div class="md:w-1/2 flex justify-center">
+                <div class="relative">
+                    <div class="w-64 h-64 md:w-80 md:h-80 rounded-full bg-blue-200 overflow-hidden border-4 border-white shadow-xl">
+                        <img src="https://imgur.com/JdDqw4L.jpg" alt="My Image">class="w-full h-full object-cover">
+                    </div>
+                    <div class="absolute -bottom-4 -right-4 bg-white rounded-lg shadow-lg p-4 transform rotate-3 hover:rotate-0 transition-transform">
+                        <p class="text-blue-600 font-bold">聖若瑟教區中學第五校</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- 關於我 -->
+    <section id="about" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-[clamp(1.5rem,3vw,2.5rem)] font-bold text-center mb-12 text-gray-800">
+                <span class="border-b-4 border-blue-300 pb-2">關於我</span>
+            </h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="bg-blue-50 rounded-xl p-6 shadow-md hover:shadow-lg transition-shadow">
+                    <h3 class="text-xl font-bold text-blue-600 mb-4">個人簡介</h3>
+                    <p class="text-gray-600 mb-4">
+                        我是廖彥禧，一名即將從聖若瑟教區中學第五校的學生。在校期間，我積極參與各類學術和課外活動，培養了廣泛的興趣和技能。
+                    </p>
+                    <p class="text-gray-600 mb-4">
+                        我熱衷於學習新知識，喜歡嘗試新事物。我相信這些特質能夠幫助我在未來成長，並朝著我的目標前進。畢業後，我希望能夠在社會學和心理學或相關領域繼續深造，探索更多可能性，為未來的社會發展貢獻自己的力量。
+                    </p>
+                </div>
+                <div class="bg-blue-50 rounded-xl p-6 shadow-md hover:shadow-lg transition-shadow">
+                    <h3 class="text-xl font-bold text-blue-600 mb-4">基本資料</h3>
+                    <div class="space-y-3">
+                        <div class="flex items-center">
+                            <div class="w-12 h-12 rounded-full bg-blue-100 flex items-center justify-center mr-4">
+                                <i class="fa fa-user text-blue-600"></i>
+                            </div>
+                            <div>
+                                <p class="text-gray-500 text-sm">姓名</p>
+                                <p class="font-medium">廖彥禧</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center">
+                            <div class="w-12 h-12 rounded-full bg-blue-100 flex items-center justify-center mr-4">
+                                <i class="fa fa-graduation-cap text-blue-600"></i>
+                            </div>
+                            <div>
+                                <p class="text-gray-500 text-sm">學歷</p>
+                                <p class="font-medium">聖若瑟教區中學第五校英文部（理科）</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center">
+                            <div class="w-12 h-12 rounded-full bg-blue-100 flex items-center justify-center mr-4">
+                                <i class="fa fa-envelope text-blue-600"></i>
+                            </div>
+                            <div>
+                                <p class="text-gray-500 text-sm">郵箱</p>
+                                <p class="font-medium">liaocici6599@gmail.com</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center">
+                            <div class="w-12 h-12 rounded-full bg-blue-100 flex items-center justify-center mr-4">
+                                <i class="fa fa-phone text-blue-600"></i>
+                            </div>
+                            <div>
+                                <p class="text-gray-500 text-sm">電話</p>
+                                <p class="font-medium">+853 6866 9244</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 技能特長 -->
+    <section id="skills" class="py-16 bg-blue-50">
+        <div class="container mx-auto px-4">
+            <h2 class="text-[clamp(1.5rem,3vw,2.5rem)] font-bold text-center mb-12 text-gray-800">
+               
+                    <ul class="space-y-4">
+                        <li>
+                            <div class="flex justify-between mb-1">
+                               
+                            
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- 技能 -->
+            <div class="mt-12 bg-white rounded-xl p-6 shadow-md hover:shadow-lg transition-shadow">
+                <h3 class="text-xl font-bold text-blue-600 mb-6">技能</h3>
+                <div class="bg-blue-50 px-4 py-2 rounded-lg flex items-center">
+                        <span class="font-medium">中文（國語&粵語）</span>
+                    </div>
+                 <div class="bg-blue-50 px-4 py-2 rounded-lg flex items-center">
+                        <span class="font-medium">英文（中等）</span>
+                    </div>
+                <div class="flex flex-wrap gap-4">
+                    <div class="bg-blue-50 px-4 py-2 rounded-lg flex items-center">
+                        <i class="fa fa-lightbulb-o text-blue-600 mr-2"></i>
+                        <span class="font-medium">創意</span>
+                    </div>
+                    <div class="bg-blue-50 px-4 py-2 rounded-lg flex items-center">
+                        <i class="fa fa-users text-blue-600 mr-2"></i>
+                        <span class="font-medium">適應性強</span>
+                    </div>
+                    <div class="bg-blue-50 px-4 py-2 rounded-lg flex items-center">
+                        <i class="fa fa-book text-blue-600 mr-2"></i>
+                        <span class="font-medium">學習能力</span>
+                    </div>
+                    <div class="bg-blue-50 px-4 py-2 rounded-lg flex items-center">
+                        <i class="fa fa-pen text-blue-600 mr-2"></i>
+                        <span class="font-medium">插圖與數位藝術</span>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+    <section id="experience" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-[clamp(1.5rem,3vw,2.5rem)] font-bold text-center mb-12 text-gray-800">
+                <span class="border-b-4 border-blue-300 pb-2">經驗</span>
+            </h2>
+            <div class="relative">
+                
+                <div class="absolute left-0 md:left-1/2 top-0 bottom-0 w-0.5 bg-blue-200 transform md:-translate-x-1/2"></div>
+                
+                <!-- 經歷1 -->
+                <div class="relative mb-12 md:mb-24">
+                    <div class="flex flex-col md:flex-row items-center">
+                        <div class="md:w-1/2 md:pr-12 md:text-right mb-8 md:mb-0">
+                            <div class="bg-blue-50 p-6 rounded-xl shadow-md hover:shadow-lg transition-shadow">
+                                <h3 class="text-xl font-bold text-blue-600 mb-2">聖五報社副社長</h3>
+                                <p class="text-gray-500 mb-3">聖若瑟教區中學第五校 | 2021-2026(轉為插畫組)</p>
+                                <p class="text-gray-600">
+                                   在擔任副社長期間，我了解了一個社團的基本構造以及如何管理安排。同時我也更加了解到新聞社和雜誌社的基本結構
+                                    。
+                                </p>
+                            </div>
+                        </div>
+                     
+                        <div class="absolute left-0 md:left-1/2 w-6 h-6 rounded-full bg-blue-500 border-4 border-white shadow-lg transform md:-translate-x-1/2"></div>
+                        <div class="md:w-1/2 md:pl-12 hidden md:block"></div>
+                    </div>
+                </div>
+                
+                <!-- 經歷2 -->
+                <div class="relative mb-12 md:mb-24">
+                    <div class="flex flex-col md:flex-row items-center">
+                        <div class="md:w-1/2 md:pr-12 hidden md:block"></div>
+                        <div class="absolute left-0 md:left-1/2 w-6 h-6 rounded-full bg-blue-500 border-4 border-white shadow-lg transform md:-translate-x-1/2"></div>
+                        <div class="md:w-1/2 md:pl-12 mb-8 md:mb-0">
+                            <div class="bg-blue-50 p-6 rounded-xl shadow-md hover:shadow-lg transition-shadow">
+                                <h3 class="text-xl font-bold text-blue-600 mb-2">托善小組</h3>
+                                <p class="text-gray-500 mb-3">聖若瑟教區中學第五校 |2022-2026</p>
+                              <p class="text-gray-600">
+                                   讓我學習到如何和一些幼童相處
+                                    。
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- 經歷3 -->
+                <div class="relative mb-12 md:mb-24">
+                    <div class="flex flex-col md:flex-row items-center">
+                        <div class="md:w-1/2 md:pr-12 md:text-right mb-8 md:mb-0">
+                            <div class="bg-blue-50 p-6 rounded-xl shadow-md hover:shadow-lg transition-shadow">
+                                <h3 class="text-xl font-bold text-blue-600 mb-2">聖五領袖生</h3>
+                                <p class="text-gray-500 mb-3">聖若瑟教區中學第五校 | 2024-2026</p>
+                              <p class="text-gray-600">
+                                    宣傳部門，擔任繪製校園宣傳漫畫的一員
+                                </p>
+                            </div>
+                        </div>
+                        <div class="absolute left-0 md:left-1/2 w-6 h-6 rounded-full bg-blue-500 border-4 border-white shadow-lg transform md:-translate-x-1/2"></div>
+                        <div class="md:w-1/2 md:pl-12 hidden md:block"></div>
+                    </div>
+                </div>
+                
+                <!-- 經歷4 -->
+                <div class="relative">
+                    <div class="flex flex-col md:flex-row items-center">
+                        <div class="md:w-1/2 md:pr-12 hidden md:block"></div>
+                        <div class="absolute left-0 md:left-1/2 w-6 h-6 rounded-full bg-blue-500 border-4 border-white shadow-lg transform md:-translate-x-1/2"></div>
+                        <div class="md:w-1/2 md:pl-12">
+                            <div class="bg-blue-50 p-6 rounded-xl shadow-md hover:shadow-lg transition-shadow">
+                                <h3 class="text-xl font-bold text-blue-600 mb-2">匠義特工</h3>
+                                <p class="text-gray-500 mb-3">聖若瑟教區中學第五校| 2022-2026</p>
+                                <p class="text-gray-600">
+                                    組織並參與了多次社區志願者活動，包括關愛孤寡老人、環保宣傳和義務家教等。通過這些活動，培養了社會責任感和團隊合作精神，同時也提高了溝通能力和問題解決能力。
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 證書 -->
+    <section id="certificates" class="py-16 bg-blue-50">
+        <div class="container mx-auto px-4">
+            <h2 class="text-[clamp(1.5rem,3vw,2.5rem)] font-bold text-center mb-12 text-gray-800">
+                <span class="border-b-4 border-blue-300 pb-2">證書</span>
+            </h2>
+            
+            <!-- 證書 -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
+                <div class="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-shadow transform hover:-translate-y-1 duration-300">
+                    <div class="h-48 overflow-hidden">
+                     <img src="https://imgur.com/toH3XI1.jpg" alt="My Image"class="w-full h-full object-cover hover:scale-110 transition-transform duration-500">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-blue-600 mb-2">ABRSM High Scorers' Concert Performance Certificate</h3>
+                        <p class="text-gray-500 mb-3"> | 2024</p>
+                        <p class="text-gray-600">
+                            2024年ABRSM全澳五級考級最高分-144分
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-shadow transform hover:-translate-y-1 duration-300">
+                    <div class="h-48 overflow-hidden">
+                        <img src="https://imgur.com/PC0kZ14.jpg" alt="My Image"class="w-full h-full object-cover hover:scale-110 transition-transform duration-500">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-blue-600 mb-2">⻘年義⼯獎</h3>
+                        <p class="text-gray-500 mb-3">銅獎 | 2025</p>
+                        <p class="text-gray-600">
+                            2024年期間在澳⾨特別⾏政區完成了不少於100⼩時義務⼯作 。
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-shadow transform hover:-translate-y-1 duration-300">
+                    <div class="h-48 overflow-hidden">
+                        <img src="https://imgur.com/ecpfwas.jpg" alt="My Image"class="w-full h-full object-cover hover:scale-110 transition-transform duration-500">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-blue-600 mb-2">中國⽂化常識（普及標準)考試</h3>
+                        <p class="text-gray-500 mb-3">| 2024</p>
+                        <p class="text-gray-600">
+                          
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-shadow transform hover:-translate-y-1 duration-300">
+                    <div class="h-48 overflow-hidden">
+                        <img src="https://imgur.com/8fC1zDR.jpg" alt="My Image"class="w-full h-full object-cover hover:scale-110 transition-transform duration-500">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-blue-600 mb-2">ABRSM鋼琴考級</h3>
+                        <p class="text-gray-500 mb-3">五级 | 2023</p>
+                        <p class="text-gray-600">
+                            展示了多年來堅持學習鋼琴的成果，具備較高的音樂素養和藝術表現力。
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-shadow transform hover:-translate-y-1 duration-300">
+                    <div class="h-48 overflow-hidden">
+                        <img src="https://imgur.com/HCY7hML.jpg" alt="My Image"class="w-full h-full object-cover hover:scale-110 transition-transform duration-500">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-blue-600 mb-2">澳門紅十字會學校成人急救課程</h3>
+                        <p class="text-gray-500 mb-3">| 2024</p>
+                        <p class="text-gray-600">
+                          學習到了很多急救知識並學會如何運用以及應用到生活上。  
+                        </p>
+                    </div>
+                </div>
+               <div class="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-shadow transform hover:-translate-y-1 duration-300">
+                    <div class="h-48 overflow-hidden">
+                        <img src="https://imgur.com/LJ3yiBM.jpg" alt="My Image"class="w-full h-full object-cover hover:scale-110 transition-transform duration-500">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-blue-600 mb-2">FISO certificate of Achievement </h3>
+                        <p class="text-gray-500 mb-3">| 2024</p>
+                        <p class="text-gray-600">
+                        For winning the BRONZE award in the NATIONAL
+ROUND of the Future Intelligence Students Olympiad
+in the category of SCIENCE    
+                        </p>
+                    </div>
+                </div>
+               <div class="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-shadow transform hover:-translate-y-1 duration-300">
+                    <div class="h-48 overflow-hidden">
+                        <img src="https://imgur.com/rk1nOtF.jpg" alt="My Image"class="w-full h-full object-cover hover:scale-110 transition-transform duration-500">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-blue-600 mb-2">FISO certificate of Achievement </h3></h3>
+                        <p class="text-gray-500 mb-3">| 2024</p>
+                        <p class="text-gray-600">
+                       For winning the SILVER award in the NATIONAL ROUND
+of the Future Intelligence Students Olympiad
+in the category of ART     
+                        </p>
+                    </div>
+                </div>
+               <div class="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-shadow transform hover:-translate-y-1 duration-300">
+                    <div class="h-48 overflow-hidden">
+                        <img src="https://imgur.com/HqkMRkb.jpg" alt="My Image"class="w-full h-full object-cover hover:scale-110 transition-transform duration-500">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-blue-600 mb-2">第九屆澳⾨學⽣⽣物科普營</h3>
+                        <p class="text-gray-500 mb-3">| 2024</p>
+                        <p class="text-gray-600">
+                         了解了暨南大學的各項學科，並且對生物科學有更多的認識。   
+                        </p>
+                    </div>
+                </div>
+                <div class="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-shadow transform hover:-translate-y-1 duration-300">
+                    <div class="h-48 overflow-hidden">
+                        <img src="https://imgur.com/H8VcjSk.jpg" alt="My Image"class="w-full h-full object-cover hover:scale-110 transition-transform duration-500">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-blue-600 mb-2">“ 感 受 ⼭ 與 城 ” ⻘島科普學習 </h3>
+                        <p class="text-gray-500 mb-3"> | 2025</p>
+                        <p class="text-gray-600">
+                          感受到了山東特別的文化，在旅程上收穫了許多。  
+                        </p>
+                    </div>
+                </div>
+          <div class="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-shadow transform hover:-translate-y-1 duration-300">
+                    <div class="h-48 overflow-hidden">
+                        <img src="https://imgur.com/xSjSiQm.jpg" alt="My Image"class="w-full h-full object-cover hover:scale-110 transition-transform duration-500">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-blue-600 mb-2">普法新Teen地-校園寫作獎勵計劃 </h3>
+                        <p class="text-gray-500 mb-3"> | 2024</p>
+                        <p class="text-gray-600">
+                            
+                        </p>
+                    </div>
+                </div>
+          <div class="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-shadow transform hover:-translate-y-1 duration-300">
+                    <div class="h-48 overflow-hidden">
+                        <img src="https://imgur.com/e5jOZVM.jpg" alt="My Image"class="w-full h-full object-cover hover:scale-110 transition-transform duration-500">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-blue-600 mb-2">廈⻔⼤學經濟學科優秀中學⽣冬令營 </h3>
+                        <p class="text-gray-500 mb-3"> | 2024</p>
+                        <p class="text-gray-600">
+                          第一次深刻體驗到大學生活，並認識了許多新的人。接觸以及學習到了很多新的事物，是一個非常難忘的體驗。  
+                        </p>
+                    </div>
+                </div>
+          <div class="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-shadow transform hover:-translate-y-1 duration-300">
+                    <div class="h-48 overflow-hidden">
+                        <img src="https://imgur.com/JefrpeA.jpg" alt="My Image"class="w-full h-full object-cover hover:scale-110 transition-transform duration-500">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-blue-600 mb-2">singapore math challenge </h3>
+                        <p class="text-gray-500 mb-3"> | 2024</p>
+                        <p class="text-gray-600">
+                            
+                        </p>
+                    </div>
+                </div>
+          <div class="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-shadow transform hover:-translate-y-1 duration-300">
+                    <div class="h-48 overflow-hidden">
+                        <img src="https://imgur.com/0pzIJD2.jpg" alt="My Image"class="w-full h-full object-cover hover:scale-110 transition-transform duration-500">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-blue-600 mb-2">Brain Bee 國際腦神經科學⼤賽 </h3>
+                        <p class="text-gray-500 mb-3"> | 2024</p>
+                        <p class="text-gray-600">
+                         澳⾨區選拔賽（校內甄選賽）中成績優異   
+                        </p>
+                    </div>
+                </div>
+          <div class="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-shadow transform hover:-translate-y-1 duration-300">
+                    <div class="h-48 overflow-hidden">
+                        <img src="https://imgur.com/8po22QX.jpg" alt="My Image"class="w-full h-full object-cover hover:scale-110 transition-transform duration-500">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-blue-600 mb-2">Microsoft Office Specialist Excel 2019 Expert </h3>
+                        <p class="text-gray-500 mb-3"> | 2024</p>
+                        <p class="text-gray-600">
+                            
+                        </p>
+                    </div>
+                </div>
+          <div class="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-shadow transform hover:-translate-y-1 duration-300">
+                    <div class="h-48 overflow-hidden">
+                                                <img src="https://imgur.com/gy4g2Su.jpg" alt="My Image"class="w-full h-full object-cover hover:scale-110 transition-transform duration-500">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-blue-600 mb-2">Microsoft Office Specialist Powerpoint 2019 Associate </h3>
+                        <p class="text-gray-500 mb-3"> | 2025</p>
+                        <p class="text-gray-600">
+                            
+                        </p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- 作品 -->
+            <h3 class="text-2xl font-bold text-center mb-8 text-gray-800">個人作品</h3>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-shadow">
+                    <div class="h-64 overflow-hidden">
+                        <img src="https://imgur.com/betTfDh.jpg" alt="My Image"class="w-full h-full object-cover hover:scale-110 transition-transform duration-500">
+                    </div>
+                    <div class="p-6">
+                        <div class="flex justify-between items-center mb-3">
+                            <h3 class="text-xl font-bold text-blue-600">2025校慶賀圖（已在聖五報社IG發佈）</h3>
+                           
+                        </div>
+                        <p class="text-gray-600 mb-4">
+                        </p>
+                        <a href="https://www.instagram.com/p/DHYSPRhTS7n/?igsh=MXQ0OGpuam5lZGQwdg==" class="text-blue-600 hover:text-blue-800 font-medium flex items-center">
+                            查看詳情 <i class="fa fa-arrow-right ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-shadow">
+                    <div class="h-64 overflow-hidden">
+                       <img src="https://imgur.com/SXYjYrz.jpg" alt="My Image"class="w-full h-full object-cover hover:scale-110 transition-transform duration-500">
+                    </div>
+                    <div class="p-6">
+                        <div class="flex justify-between items-center mb-3">
+                            <h3 class="text-xl font-bold text-blue-600">領袖生學年主題宣傳漫畫-堅毅（已在聖五領袖生IG發佈)</h3>
+                        </div>
+                        <p class="text-gray-600 mb-4">
+                            
+                        </p>
+                        <a href="https://www.instagram.com/p/DHsrbzMSS3A/?igsh=N3Z6cG5wZ3NoaWJp" class="text-blue-600 hover:text-blue-800 font-medium flex items-center">
+                            查看詳情 <i class="fa fa-arrow-right ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-shadow">
+                    <div class="h-64 overflow-hidden">
+                        <img src="https://imgur.com/ep8Hcps.jpg" alt="My Image"class="w-full h-full object-cover hover:scale-110 transition-transform duration-500">
+                    </div>
+                    <div class="p-6">
+                        <div class="flex justify-between items-center mb-3">
+                            <h3 class="text-xl font-bold text-blue-600">領袖生新年特別篇（已在聖五領袖生IG發佈)</h3>
+                            
+                        </div>
+                        <p class="text-gray-600 mb-4">
+                            
+                        </p>
+                        <a href="https://imgur.com/ep8Hcps" class="text-blue-600 hover:text-blue-800 font-medium flex items-center">
+                            查看詳情 <i class="fa fa-arrow-right ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-shadow">
+                    <div class="h-64 overflow-hidden">
+                         <img src="https://imgur.com/JLyZznc.jpg" alt="My Image"class="w-full h-full object-cover hover:scale-110 transition-transform duration-500">
+                    </div>
+                    <div class="p-6">
+                        <div class="flex justify-between items-center mb-3">
+                            <h3 class="text-xl font-bold text-blue-600">五四青年節海報</h3>
+                            
+                        </div>
+                        <p class="text-gray-600 mb-4">
+                            為學校五四青年節壁報所繪製的
+                        </p>
+                        <a href="https://imgur.com/JLyZznc" class="text-blue-600 hover:text-blue-800 font-medium flex items-center">
+                            查看詳情 <i class="fa fa-arrow-right ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 聯繫方式 -->
+    <section id="contact" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-[clamp(1.5rem,3vw,2.5rem)] font-bold text-center mb-12 text-gray-800">
+                <span class="border-b-4 border-blue-300 pb-2">聯繫方式</span>
+            </h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="bg-blue-50 rounded-xl p-6 shadow-md hover:shadow-lg transition-shadow">
+                    <h3 class="text-xl font-bold text-blue-600 mb-6">聯繫我</h3>
+                    <form>
+                        <div class="mb-4">
+                            <label for="name" class="block text-gray-700 font-medium mb-2">姓名</label>
+                            <input type="text" id="name" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent" placeholder="請輸入你的名字">
+                        </div>
+                        <div class="mb-4">
+                            <label for="email" class="block text-gray-700 font-medium mb-2">郵箱</label>
+                            <input type="email" id="email" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent" placeholder="請輸入您的郵箱">
+                        </div>
+                        <div class="mb-4">
+                            <label for="subject" class="block text-gray-700 font-medium mb-2">主題</label>
+                            <input type="text" id="subject" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent" placeholder="請輸入郵箱主題">
+                        </div>
+                        <div class="mb-6">
+                            <label for="message" class="block text-gray-700 font-medium mb-2">留言</label>
+                            <textarea id="message" rows="5" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent" placeholder="請輸入您的留言内容"></textarea>
+                        </div>
+                        <button type="submit" class="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-lg transition-colors shadow-md hover:shadow-lg transform hover:-translate-y-1 duration-300">
+                            發送留言
+                        </button>
+                    </form>
+                </div>
+                
+                <div class="bg-blue-50 rounded-xl p-6 shadow-md hover:shadow-lg transition-shadow">
+                    <h3 class="text-xl font-bold text-blue-600 mb-6">聯繫方式</h3>
+                    <div class="space-y-6">
+                        <div class="flex items-start">
+                            <div class="w-12 h-12 rounded-full bg-blue-100 flex items-center justify-center mr-4 flex-shrink-0">
+                                <i class="fa fa-envelope text-blue-600"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-medium text-gray-800 mb-1">郵箱</h4>
+                                <p class="text-gray-600">liaocici6599@gmail.com</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="w-12 h-12 rounded-full bg-blue-100 flex items-center justify-center mr-4 flex-shrink-0">
+                                <i class="fa fa-phone text-blue-600"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-medium text-gray-800 mb-1">電話</h4>
+                                <p class="text-gray-600">+886 912 345 678</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="w-12 h-12 rounded-full bg-blue-100 flex items-center justify-center mr-4 flex-shrink-0">
+                                <i class="fa fa-map-marker text-blue-600"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-medium text-gray-800 mb-1">地址</h4>
+                                <p class="text-gray-600">筷子基沙梨頭北街</p>
+                            </div>
+                        </div>
+                            </div>
+                            <div>
+                                
+                    
+                    <div class="mt-8">
+                        <h4 class="font-medium text-gray-800 mb-4">關注我</h4>
+                        <div class="flex space-x-4">
+                            <a href="https://www.facebook.com/share/1Z9XKxXjwJ/?mibextid=wwXIfr" class="w-10 h-10 rounded-full bg-blue-600 flex items-center justify-center text-white hover:bg-blue-700 transition-colors">
+                                <i class="fa fa-facebook"></i>
+                            </a>
+                            
+                            <a href=" https://www.instagram.com/liaoyenxi_?igsh=aDdoYnJyemw0ZHkz&utm_source=qr" class="w-10 h-10 rounded-full bg-blue-600 flex items-center justify-center text-white hover:bg-blue-700 transition-colors">
+                                <i class="fa fa-instagram"></i>
+                            </a>
+                            <a href="https://github.com/Cccccc200" class="w-10 h-10 rounded-full bg-blue-600 flex items-center justify-center text-white hover:bg-blue-700 transition-colors">
+                                <i class="fa fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 页脚 -->
+    <footer class="bg-blue-600 text-white py-8">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-6 md:mb-0">
+                    <h3 class="text-xl font-bold mb-2">廖彥禧<br>Cici Liao</h3>
+                    <p class="text-blue-100">聖若瑟教區中學第五校</p>
+                </div>
+                <div class="flex flex-wrap justify-center gap-6">
+                    <a href="#about" class="text-blue-100 hover:text-white transition-colors">關於我</a>
+                    <a href="#skills" class="text-blue-100 hover:text-white transition-colors">技能特長</a>
+                    <a href="#experience" class="text-blue-100 hover:text-white transition-colors">經歷成就</a>
+                    <a href="#certificates" class="text-blue-100 hover:text-white transition-colors">證書</a>
+                    <a href="#contact" class="text-blue-100 hover:text-white transition-colors">聯繫方式</a>
+                </div>
+            </div>
+            <div class="border-t border-blue-500 mt-8 pt-8 text-center text-blue-100">
+                <p>&copy; 2025 廖彥禧個人介紹網站 | 版權所有</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- 返回頂部按鈕 -->
+    <button id="back-to-top" class="fixed bottom-6 right-6 bg-blue-600 hover:bg-blue-700 text-white w-12 h-12 rounded-full flex items-center justify-center shadow-lg transition-all duration-300 opacity-0 invisible">
+        <i class="fa fa-arrow-up"></i>
+    </button>
+
+    <script>
+        // 导航栏滚动效果
+        const navbar = document.getElementById('navbar');
+        const backToTop = document.getElementById('back-to-top');
+        
+        window.addEventListener('scroll', function() {
+            if (window.scrollY > 100) {
+                navbar.classList.add('py-2', 'shadow-md');
+                navbar.classList.remove('py-3');
+                backToTop.classList.remove('opacity-0', 'invisible');
+                backToTop.classList.add('opacity-100', 'visible');
+            } else {
+                navbar.classList.remove('py-2', 'shadow-md');
+                navbar.classList.add('py-3');
+                backToTop.classList.add('opacity-0', 'invisible');
+                backToTop.classList.remove('opacity-100', 'visible');
+            }
+        });
+        
+        // 移动端菜单
+        const menuToggle = document.getElementById('menu-toggle');
+        const mobileMenu = document.getElementById('mobile-menu');
+        
+        menuToggle.addEventListener('click', function() {
+            mobileMenu.classList.toggle('hidden');
+        });
+        
+        // 平滑滚动
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                
+                // 关闭移动端菜单
+                mobileMenu.classList.add('hidden');
+                
+                const targetId = this.getAttribute('href');
+                const targetElement = document.querySelector(targetId);
+                
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 80,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+        
+        // 返回顶部按钮
+        backToTop.addEventListener('click', function() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+    </script>
+</body>
+</html>
+<!-- partial -->
+  
+</body>
+</html>
